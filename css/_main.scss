@@ -10,6 +10,7 @@ a {
   text-decoration: none;
 }
 body {
+  background: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,29 +27,39 @@ summary {
   }
 }
 .center {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .container {
-  padding: 0 calc(50% - 1140px / 2);
+  padding: 0 calc(50% - 1440px / 2);
+}
+
+@media (max-width: 1480px) {
+  .center {
+    max-width: (1140px - 30px * 2);
+    margin: 0 auto;
+  }
+  .container {
+    padding: 0 calc(50% - (1140px - 30px * 2) / 2);
+  }
 }
 
 @media (max-width: 1180px) {
   .center {
-    max-width: (768px - 16px /* боковые отступы */ * 2);
+    max-width: (768px - 16px * 2);
     margin: 0 auto;
   }
   .container {
-    padding: 0 calc(50% - (768px - 16px /* боковые отступы */ * 2) / 2);
+    padding: 0 calc(50% - (768px - 16px * 2) / 2);
   }
 }
 
 @media (max-width: 797px) {
   .center {
-    max-width: (375px - 8px /* боковые отступы */ * 2);
+    max-width: (375px - 8px * 2);
     margin: 0 auto;
   }
   .container {
-    padding: 0 calc(50% - (375px - 8px /* боковые отступы */ * 2) / 2);
+    padding: 0 calc(50% - (375px - 8px * 2) / 2);
   }
 }
