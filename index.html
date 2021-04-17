@@ -6,45 +6,49 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
    <title>Main</title>
 </head>
 
 <body>
    <header class="header container">
-      <div class="header__logo">
-         <div class="logo">
-            <a href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a>
-         </div>
+      <div class="header__logo logo">
+         <a href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a>
       </div>
-      <nav class="header__nav menu">
-         <a class="menu__link" href="#">Каталог</a>
+      <nav class="header__menu menu">
+         <a class="menu__link" href="#">Каталог </a>
          <a class="menu__link" href="#">Доставка</a>
          <a class="menu__link" href="#">Контакты</a>
       </nav>
       <div class="header__right">
-         <div class="menu-right">
-            <form action="#" class="menu-right__form">
-               <input class="menu-right__input" type="search" placeholder="Поиск по сайту">
-               <img class="menu-right__img" src="img/search.svg" alt="icon">
-            </form>
-            <a href="#"><svg class="menu-right__icon" width="30" height="32" viewBox="0 0 30 32" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 31.1075C1.8 24.2075 7.4 18.9075 14.1 18.7075C21.2 18.4075 27.6 23.9075 28.4 31.4075"
-                     stroke="white" stroke-width="2" />
-                  <path
-                     d="M5.79997 9.60736C5.69997 14.4074 9.89996 18.4074 14.6 18.4074C19.4 18.4074 23.6 14.6074 23.6 9.70736C23.6 4.70736 19.2 0.807361 14.4 1.00736C9.89997 1.10736 5.79997 4.90736 5.79997 9.60736Z"
-                     stroke="white" stroke-width="2" />
-               </svg></a>
-            <a href="#"><svg class="menu-right__icon" width="35" height="30" viewBox="0 0 35 30" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 1H5.3L11 20.2H26.3L33.3 7H14.1" stroke="white" stroke-width="2" />
-                  <path
-                     d="M9.7 28.7999C10.6389 28.7999 11.4 28.0388 11.4 27.0999C11.4 26.161 10.6389 25.3999 9.7 25.3999C8.76112 25.3999 8 26.161 8 27.0999C8 28.0388 8.76112 28.7999 9.7 28.7999Z"
-                     fill="white" stroke="white" stroke-width="2" />
-                  <path
-                     d="M28.1 28.7999C29.0389 28.7999 29.8 28.0388 29.8 27.0999C29.8 26.161 29.0389 25.3999 28.1 25.3999C27.1611 25.3999 26.4 26.161 26.4 27.0999C26.4 28.0388 27.1611 28.7999 28.1 28.7999Z"
-                     fill="white" stroke="white" stroke-width="2" />
-               </svg></a>
+         <form action="#" class="header__form search-form">
+            <label for="search-form__id"><img class="search-form__img" src="img/search.svg" alt="icon"></label>
+            <input id="search-form__id" class="search-form__input" type="text" placeholder="Поиск по сайту">
+         </form>
+         <nav class="header__icons icons">
+            <a class="icons__link" href="#"><img class="icons__img" src="img/profile.svg" alt="profile"></a>
+            <a class="icons__link" href="#"><img class="icons__img" src="img/busket.svg" alt="cart"></a>
+         </nav>
+      </div>
+      <div class="header__burger burger-menu">
+         <input class="burger-menu__input" type="checkbox" id="burger-menu">
+         <label class="burger-menu__label" for="burger-menu"><img src="img/burger.svg" alt="MENU"></label>
+         <div class="burger-menu__open">
+            <ul class="burger-menu__list center">
+               <li class="burger-menu__item">
+                  <form action="#" class="search-form">
+                     <label for="search-form__id"><img class="search-form__img" src="img/search.svg" alt="icon"></label>
+                     <input id="search-form__id" class="search-form__input" type="text" placeholder="Поиск по сайту">
+                  </form>
+               </li>
+               <li class="burger-menu__item">МЕНЮ</li>
+               <li class="burger-menu__item"><a class="burger-menu__link" href="#">Профиль</a></li>
+               <li class="burger-menu__item"><a class="burger-menu__link" href="#">Корзина</a></li>
+               <li class="burger-menu__item"><a class="burger-menu__link" href="#">Каталог</a></li>
+               <li class="burger-menu__item"><a class="burger-menu__link" href="#">Доставка</a></li>
+               <li class="burger-menu__item"><a class="burger-menu__link" href="#">Контакты</a></li>
+            </ul>
          </div>
       </div>
    </header>
