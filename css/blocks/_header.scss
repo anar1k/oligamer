@@ -22,7 +22,7 @@
     color: #ffffff;
     transition: 0.4s;
     &:hover {
-      color: #ff1e2c;
+      transform: scale(1.05);
     }
   }
 }
@@ -49,6 +49,7 @@
     }
   }
   &__img {
+    transition: 0.4s;
     position: absolute;
     top: 25%;
     right: 5%;
@@ -62,11 +63,28 @@
 }
 
 .icons {
-  &__img {
+  &__link {
+    position: relative;
     transition: 0.4s;
     &:hover {
       transform: scale(1.05);
     }
+  }
+  &__circle {
+    /* display: none; */
+    position: absolute;
+    top: -6px;
+    left: 22px;
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    background: red;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -75,11 +93,17 @@
   &__input:checked ~ &__open {
     display: block;
   }
+  &__input:checked ~ &__label &__img {
+    transform: rotate(180deg);
+  }
   &__input {
     display: none;
   }
   &__label {
     cursor: pointer;
+  }
+  &__img {
+    transition: 1s;
   }
   &__open {
     display: none;
