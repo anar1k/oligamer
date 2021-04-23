@@ -122,10 +122,9 @@
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   }
   &__list {
-    height: 400px;
     box-sizing: border-box;
     text-align: center;
-    padding: 70px 40px;
+    padding: 40px;
   }
   &__item {
     padding-bottom: 9px;
@@ -185,7 +184,6 @@
       width: 100vw;
     }
     &__list {
-      height: 363px;
       padding: 37px 34px;
     }
   }
