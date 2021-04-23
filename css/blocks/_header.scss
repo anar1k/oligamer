@@ -1,10 +1,12 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  box-sizing: border-box;
-  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+  }
   &__menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -113,11 +115,12 @@
     top: 100px;
     background: #1c1c1c;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    width: 100vw;
   }
   &__list {
+    height: 400px;
+    box-sizing: border-box;
     text-align: center;
-    padding: 37px 34px;
+    padding: 70px 40px;
   }
   &__item {
     padding-bottom: 9px;
@@ -172,6 +175,13 @@
     }
     &__link {
       margin-left: 0;
+    }
+    &__open {
+      width: 100vw;
+    }
+    &__list {
+      height: 363px;
+      padding: 37px 34px;
     }
   }
 }

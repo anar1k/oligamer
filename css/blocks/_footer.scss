@@ -1,10 +1,12 @@
 .footer {
-  margin-top: auto;
   background: #1c1c1c;
-  padding-top: 58px;
-  padding-bottom: 55px;
-  display: flex;
-  justify-content: space-evenly;
+  &__wrapper {
+    padding-top: 58px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+  }
   &__heading {
     font-size: 20px;
     line-height: 150%;
@@ -46,13 +48,18 @@
 
 @media (max-width: 1139px) {
   .footer {
-    justify-content: space-between;
+    &__wrapper {
+      justify-content: space-between;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .footer {
-    flex-direction: column;
+    &__wrapper {
+      flex-direction: column;
+    }
+
     &__socials {
       display: flex;
       flex-direction: column;
