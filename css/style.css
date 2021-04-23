@@ -23,6 +23,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Roboto", sans-serif;
+  padding-top: 100px;
 }
 
 button,
@@ -76,6 +77,14 @@ summary::-webkit-details-marker {
   .container {
     padding: 0 calc(50% - (375px - 8px * 2) / 2);
   }
+}
+
+.header {
+  background: #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .header__wrapper {
@@ -240,7 +249,7 @@ summary::-webkit-details-marker {
 .burger-menu__open {
   display: none;
   position: absolute;
-  z-index: 100;
+  z-index: 500;
   right: 0;
   top: 100px;
   background: #1c1c1c;
@@ -297,6 +306,9 @@ summary::-webkit-details-marker {
 }
 
 @media (max-width: 767px) {
+  .header__wrapper {
+    position: static;
+  }
   .header__form {
     display: none;
   }

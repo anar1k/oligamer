@@ -1,4 +1,9 @@
 .header {
+  background: #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -110,7 +115,7 @@
   &__open {
     display: none;
     position: absolute;
-    z-index: 100;
+    z-index: 500;
     right: 0;
     top: 100px;
     background: #1c1c1c;
@@ -165,6 +170,12 @@
 }
 
 @media (max-width: 767px) {
+  .header {
+    &__wrapper {
+      position: static;
+    }
+  }
+
   .header__form {
     display: none;
   }
