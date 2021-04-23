@@ -170,12 +170,6 @@
 }
 
 @media (max-width: 767px) {
-  .header {
-    &__wrapper {
-      position: static;
-    }
-  }
-
   .header__form {
     display: none;
   }
