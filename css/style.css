@@ -391,11 +391,14 @@ summary::-webkit-details-marker {
   }
 }
 
-.promo__info {
+.promo__wrapper {
   background-image: url(../img/promo.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 65%;
+}
+
+.promo__info {
   padding-top: 86px;
   padding-left: 42px;
   padding-bottom: 168px;
@@ -449,14 +452,14 @@ summary::-webkit-details-marker {
   right: 18px;
 }
 
-.description {
+.description__wrapper {
   background-image: url(../img/background-description.png);
   background-repeat: no-repeat;
   background-position: 115px center;
   background-size: 38%;
 }
 
-.description__wrapper {
+.description__info {
   margin-left: auto;
   padding-top: 73px;
   width: 50%;
@@ -592,6 +595,9 @@ summary::-webkit-details-marker {
   background-image: url(../img/feedback-bc.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.feedback__info {
   padding-top: 75px;
   text-align: center;
   padding-bottom: 130px;
@@ -689,10 +695,10 @@ summary::-webkit-details-marker {
   .promo__text {
     width: 350px;
   }
-  .description {
+  .description__wrapper {
     background-position: 90px center;
   }
-  .description__wrapper {
+  .description__info {
     padding-top: 70px;
     padding-bottom: 160px;
   }
@@ -710,7 +716,7 @@ summary::-webkit-details-marker {
   .specials__heading {
     font-size: 40px;
   }
-  .feedback__wrapper {
+  .feedback__info {
     padding-top: 35px;
   }
 }
@@ -736,10 +742,10 @@ summary::-webkit-details-marker {
   .btn-transition__link:hover .btn-transition__icon {
     display: none;
   }
-  .description {
+  .description__wrapper {
     background-position: left center;
   }
-  .description__wrapper {
+  .description__info {
     padding-top: 100px;
     padding-bottom: 90px;
   }
@@ -780,14 +786,16 @@ summary::-webkit-details-marker {
     background-size: 100%;
     width: 331px;
   }
-  .feedback__wrapper {
+  .feedback__info {
     padding-top: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .promo__info {
+  .promo__wrapper {
     background-image: none;
+  }
+  .promo__info {
     text-align: center;
     padding-left: 0;
   }
@@ -798,10 +806,10 @@ summary::-webkit-details-marker {
   .btn-transition__link {
     font-size: 14px;
   }
-  .description {
+  .description__wrapper {
     background-image: none;
   }
-  .description__wrapper {
+  .description__info {
     text-align: center;
     width: 100%;
     padding-top: 50px;
@@ -832,6 +840,16 @@ summary::-webkit-details-marker {
 }
 
 .category__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
   width: 330px;
   height: 330px;
   -webkit-box-sizing: border-box;
@@ -849,14 +867,14 @@ summary::-webkit-details-marker {
 }
 
 .category__img {
-  max-height: 267px;
-  max-width: 267px;
+  max-height: 232px;
+  max-width: 232px;
 }
 
 .category__text {
   width: calc(100% - 40px);
   position: absolute;
-  top: 266px;
+  top: 280px;
   left: 20px;
   font-weight: 500;
   font-size: 24px;

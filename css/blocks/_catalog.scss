@@ -7,6 +7,10 @@
     padding-bottom: 89px;
   }
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
     width: 330px;
     height: 330px;
     box-sizing: border-box;
@@ -20,13 +24,13 @@
     }
   }
   &__img {
-    max-height: 267px;
-    max-width: 267px;
+    max-height: 232px;
+    max-width: 232px;
   }
   &__text {
     width: calc(100% - 40px);
     position: absolute;
-    top: 266px;
+    top: 280px;
     left: 20px;
     font-weight: 500;
     font-size: 24px;
