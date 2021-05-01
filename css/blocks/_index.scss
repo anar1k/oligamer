@@ -1,10 +1,9 @@
 .promo {
-  background-image: url(../img/promo.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 65%;
-
   &__info {
+    background-image: url(../img/promo.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 65%;
     padding-top: 86px;
     padding-left: 42px;
     padding-bottom: 168px;
@@ -346,8 +345,8 @@
 
 @media (max-width: 767px) {
   .promo {
-    background-image: none;
     &__info {
+      background-image: none;
       text-align: center;
       padding-left: 0;
     }
