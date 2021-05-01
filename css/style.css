@@ -516,6 +516,7 @@ summary::-webkit-details-marker {
 }
 
 .specials__wrapper {
+  padding-bottom: 75px;
   text-align: center;
 }
 
@@ -591,8 +592,8 @@ summary::-webkit-details-marker {
   background-image: url(../img/feedback-bc.png);
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 75px;
   text-align: center;
-  padding-top: 201px;
   padding-bottom: 130px;
 }
 
@@ -710,7 +711,7 @@ summary::-webkit-details-marker {
     font-size: 40px;
   }
   .feedback__wrapper {
-    padding-top: 140px;
+    padding-top: 35px;
   }
 }
 
@@ -780,7 +781,7 @@ summary::-webkit-details-marker {
     width: 331px;
   }
   .feedback__wrapper {
-    padding-top: 100px;
+    padding-top: 20px;
   }
 }
 

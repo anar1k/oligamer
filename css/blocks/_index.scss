@@ -101,6 +101,7 @@
 
 .specials {
   &__wrapper {
+    padding-bottom: 75px;
     text-align: center;
   }
   &__heading {
@@ -153,8 +154,8 @@
     background-image: url(../img/feedback-bc.png);
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 75px;
     text-align: center;
-    padding-top: 201px;
     padding-bottom: 130px;
   }
   &__heading {
@@ -253,7 +254,7 @@
 
   .feedback {
     &__wrapper {
-      padding-top: 140px;
+      padding-top: 35px;
     }
   }
 }
@@ -338,7 +339,7 @@
 
   .feedback {
     &__wrapper {
-      padding-top: 100px;
+      padding-top: 20px;
     }
   }
 }

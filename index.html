@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet" />
    <title>Main</title>
 </head>
 
@@ -84,7 +85,7 @@
             </div>
          </div>
       </section>
-      <section class="description center">
+      <section class="description center" data-aos="fade-down">
          <div class="description__wrapper">
             <h2 class="description__heading">Чем мы занимаемся?</h2>
             <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim
@@ -101,7 +102,7 @@
                placerat nisi, lobortis.</p>
          </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-aos="fade-down">
          <div class="advantages__wrapper container">
             <h2 class="advantages__heading">Гарантия качества</h2>
             <div class="advantages__items">
@@ -132,7 +133,7 @@
             </div>
          </div>
       </section>
-      <section class="specials">
+      <section class="specials" data-aos="fade-under">
          <div class="specials__wrapper container">
             <h2 class="specials__heading">Специальные предложения</h2>
             <div class="specials__items">
@@ -163,7 +164,7 @@
             </div>
          </div>
       </section>
-      <aside class="feedback">
+      <aside class="feedback" data-aos="fade-up">
          <div class="feedback__wrapper container">
             <h3 class="feedback__heading">Нужна помощь?</h3>
             <p class="feedback__text">Наши специалисты свяжутся с вами в любой удобной форме и проконсультируют по всем
@@ -240,6 +241,15 @@
          </div>
       </div>
    </footer>
+   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         offset: 200,
+         duration: 1000,
+         easing: 'ease-in-quad',
+         delay: 100,
+      });
+   </script>
 </body>
 
 </html>
