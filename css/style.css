@@ -843,9 +843,9 @@ summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -858,8 +858,6 @@ summary::-webkit-details-marker {
   border-radius: 10px;
   position: relative;
   text-align: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
 .category__item:hover {
@@ -874,7 +872,7 @@ summary::-webkit-details-marker {
 .category__text {
   width: calc(100% - 40px);
   position: absolute;
-  top: 280px;
+  top: 270px;
   left: 20px;
   font-weight: 500;
   font-size: 24px;
