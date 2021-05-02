@@ -1,36 +1,39 @@
-.delivery__wrapper {
-  padding-bottom: 63px;
+.delivery {
+  &__wrapper {
+    padding-bottom: 63px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+  &__info {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ccc;
+  }
+  &__heading {
+    font-size: 20px;
+    line-height: 140%;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 12px;
+  }
+  &__text {
+    padding-bottom: 12px;
+  }
+  &__item {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  &__item::before {
+    padding-right: 12px;
+    content: url(../img/elipse.svg);
+  }
 }
-.delivery__info {
-  padding-left: 20px;
-  font-size: 16px;
-  line-height: 160%;
-  color: #ccc;
-}
-.delivery__title {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 140%;
-  color: #ffffff;
-}
-.delivery__heading {
-  font-size: 20px;
-  line-height: 140%;
-  color: #ffffff;
-  padding-top: 25px;
-  padding-bottom: 12px;
-}
-.delivery__text {
-  padding-bottom: 12px;
-}
-.delivery__item {
-  display: flex;
-  padding-bottom: 10px;
-}
-.delivery__item::before {
-  padding-right: 12px;
-  content: url(../img/elipse.svg);
-}
+
 .payment {
   &__summary {
     position: relative;
@@ -48,7 +51,14 @@
       fill: white;
     }
   }
+
+  &__heading {
+    padding-top: 0;
+  }
+
   &__info {
     padding: 15px;
+    border: 5px solid red;
+    margin: 15px;
   }
 }

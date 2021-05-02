@@ -907,18 +907,18 @@ summary::-webkit-details-marker {
   padding-bottom: 63px;
 }
 
-.delivery__info {
-  padding-left: 20px;
-  font-size: 16px;
-  line-height: 160%;
-  color: #ccc;
-}
-
 .delivery__title {
   font-weight: 500;
   font-size: 36px;
   line-height: 140%;
   color: #ffffff;
+}
+
+.delivery__info {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ccc;
 }
 
 .delivery__heading {
@@ -964,8 +964,14 @@ summary::-webkit-details-marker {
   fill: white;
 }
 
+.payment__heading {
+  padding-top: 0;
+}
+
 .payment__info {
   padding: 15px;
+  border: 5px solid red;
+  margin: 15px;
 }
 
 .footer {
