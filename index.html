@@ -263,6 +263,11 @@
          delay: 100,
       });
    </script>
+   <script>$(document).ready(function () {
+         if (!$.browser.webkit) {
+            $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+         }
+      });</script>
 
 </body>
 

@@ -1,7 +1,7 @@
 .category {
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 330px);
+    grid-template-columns: 330px 330px 330px 330px;
     grid-gap: 20px;
     justify-content: center;
     padding-bottom: 89px;
@@ -18,8 +18,9 @@
     border-radius: 10px;
     position: relative;
     text-align: center;
+    transition: 0.4s;
     &:hover {
-      border: red 1px solid;
+      transform: scale(1.05);
     }
   }
   &__img {
@@ -40,20 +41,19 @@
 
 @media (max-width: 1439px) {
   .category__wrapper {
-    grid-template-columns: repeat(3, 330px);
+    grid-template-columns: 330px 330px 330px;
     grid-gap: 15px;
   }
 }
 
 @media (max-width: 1139px) {
   .category__wrapper {
-    grid-template-columns: repeat(2, 330px);
+    grid-template-columns: 330px 330px;
   }
 }
 
 @media (max-width: 767px) {
   .category__wrapper {
     grid-template-columns: 330px;
-    grid-gap: 10px;
   }
 }
