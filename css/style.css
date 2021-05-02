@@ -4,7 +4,7 @@
 }
 
 ul,
-li {
+ol {
   list-style: none;
 }
 
@@ -903,7 +903,73 @@ summary::-webkit-details-marker {
   }
 }
 
+.delivery__wrapper {
+  padding-bottom: 63px;
+}
+
+.delivery__info {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ccc;
+}
+
+.delivery__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.delivery__heading {
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 12px;
+}
+
+.delivery__text {
+  padding-bottom: 12px;
+}
+
+.delivery__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.delivery__item::before {
+  padding-right: 12px;
+  content: url(../img/elipse.svg);
+}
+
+.payment__summary {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.payment__icon {
+  top: 5px;
+  right: -28px;
+  position: absolute;
+  stroke: #ccc;
+  fill: #ccc;
+}
+
+.payment__icon:hover {
+  stroke: white;
+  fill: white;
+}
+
+.payment__info {
+  padding: 15px;
+}
+
 .footer {
+  margin-top: auto;
   background: #1c1c1c;
 }
 
