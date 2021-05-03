@@ -18,7 +18,7 @@
             <a href="/"><img class="logo__img" src="img/logo.png" alt="logo"></a>
          </div>
          <nav class="header__menu menu">
-            <div class="menu__item menu__item-bc">
+            <div class="menu__item">
                <a class="menu__link" href="catalog.html">Каталог</a>
             </div>
             <div class="menu__item">
@@ -30,9 +30,9 @@
          </nav>
          <div class="header__right">
             <form action="#" class="header__form search-form">
-               <label class="search-form__label" for="search-form-id"><img class="search-form__img" src="img/search.svg"
-                     alt="icon"></label>
-               <input id="search-form-id" class="search-form__input" type="text" placeholder="Поиск по сайту">
+               <label class="search-form__label" for="search-form__id"><img class="search-form__img"
+                     src="img/search.svg" alt="icon"></label>
+               <input id="search-form__id" class="search-form__input" type="text" placeholder="Поиск по сайту">
             </form>
             <nav class="header__icons icons">
                <a class="icons__link" href="#"><img class="icons__img" src="img/profile.svg" alt="profile"></a>
@@ -49,10 +49,9 @@
                <ul class="burger-menu__list center">
                   <li class="burger-menu__item">
                      <form action="#" class="search-form">
-                        <label for="search-form-menu-id"><img class="search-form__img" src="img/search.svg"
+                        <label for="search-form__id"><img class="search-form__img" src="img/search.svg"
                               alt="icon"></label>
-                        <input id="search-form-menu-id" class="search-form__input" type="text"
-                           placeholder="Поиск по сайту">
+                        <input id="search-form__id" class="search-form__input" type="text" placeholder="Поиск по сайту">
                      </form>
                   </li>
                   <li class="burger-menu__item">МЕНЮ</li>
@@ -127,16 +126,16 @@
          <div class="footer__socials">
             <h4 class="footer__heading">Мы в социальных сетях</h4>
             <ul class="footer__social social">
-               <li class="social__item"><a href=""><svg class="social__img" width="42" height="42" viewBox="0 0 42 42"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+               <li class="social__item"><a aria-label="youtube" class="social__link" href="#"><svg class="social__img"
+                        width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z"
                            fill="#E40012" />
                         <path
                            d="M32.2428 17.947C32.2428 15.1621 29.9853 12.9045 27.2004 12.9045H14.3064C11.5215 12.9045 9.26392 15.1621 9.26392 17.947V23.948C9.26392 26.7329 11.5215 28.9905 14.3064 28.9905H27.2015C29.9865 28.9905 32.244 26.7329 32.244 23.948V17.947H32.2428ZM24.6596 21.397L18.8776 24.2576C18.6506 24.3802 17.8802 24.2163 17.8802 23.9583V18.0857C17.8802 17.8243 18.6564 17.6604 18.8834 17.7899L24.4189 20.8019C24.6516 20.9338 24.8947 21.2697 24.6596 21.397Z" />
                      </svg></a></li>
-               <li class="social__item"><a href=""><svg class="social__img" width="42" height="42" viewBox="0 0 42 42"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+               <li class="social__item"><a aria-label="instagram" href="#"><svg class="social__img" width="42"
+                        height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z"
                            fill="#E40012" />
@@ -147,8 +146,8 @@
                         <path
                            d="M25.9152 33.282H16.0847C12.0065 33.282 8.68842 29.9639 8.68842 25.8857V16.0553C8.68842 11.977 12.0065 8.65894 16.0847 8.65894H25.9152C29.9934 8.65894 33.3115 11.977 33.3115 16.0553V25.8857C33.3115 29.9639 29.9934 33.282 25.9152 33.282ZM16.0847 10.9749C13.2837 10.9749 11.0056 13.2531 11.0056 16.0541V25.8845C11.0056 28.6855 13.2837 30.9637 16.0847 30.9637H25.9152C28.7162 30.9637 30.9955 28.6855 30.9955 25.8845V16.0541C30.9955 13.2531 28.7162 10.9749 25.9152 10.9749H16.0847Z" />
                      </svg></a></li>
-               <li class="social__item"><a href=""><svg class="social__img" width="42" height="42" viewBox="0 0 42 42"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+               <li class="social__item"><a aria-label="whatsapp" href="#"><svg class="social__img" width="42"
+                        height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z"
                            fill="#E40012" />
@@ -157,8 +156,8 @@
                         <path fill-rule="evenodd" clip-rule="evenodd"
                            d="M25.6067 21.9712C25.1103 21.6742 24.4636 21.3429 23.8789 21.5825C23.4306 21.7659 23.1439 22.4688 22.8527 22.8276C22.7037 23.0122 22.526 23.0409 22.2967 22.948C20.6124 22.2773 19.3214 21.1525 18.3916 19.6036C18.2345 19.3628 18.262 19.1725 18.4523 18.95C18.7332 18.6198 19.0852 18.2438 19.162 17.7989C19.2377 17.3541 19.029 16.8324 18.8444 16.4357C18.6094 15.9289 18.3457 15.2055 17.8378 14.9188C17.3711 14.6551 16.7554 14.803 16.3404 15.1412C15.6227 15.726 15.2764 16.6421 15.2867 17.5501C15.2902 17.8081 15.3211 18.0649 15.3819 18.3149C15.5264 18.9134 15.8038 19.4729 16.1157 20.0049C16.3507 20.4062 16.6052 20.7948 16.8816 21.1686C17.7827 22.392 18.9029 23.4559 20.2008 24.2505C20.8497 24.6472 21.548 24.9957 22.2714 25.2354C23.082 25.5037 23.8055 25.7823 24.6815 25.616C25.5987 25.4417 26.5022 24.8742 26.8668 23.9902C26.9745 23.7288 27.0284 23.4376 26.9677 23.1613C26.8415 22.588 26.0688 22.2475 25.6067 21.9712Z" />
                      </svg></a></li>
-               <li class="social__item"><a href=""><svg class="social__img" width="42" height="42" viewBox="0 0 42 42"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+               <li class="social__item"><a aria-label="facebook" href="#"><svg class="social__img" width="42"
+                        height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                            d="M41.999 20.9995C41.999 9.40139 32.5976 0 20.9995 0C9.40141 0 0 9.40254 0 20.9995C0 31.4809 7.67933 40.1692 17.7182 41.7445V27.0703H12.3858V20.9995H17.7182V16.3733C17.7182 11.1108 20.8527 8.20328 25.6497 8.20328C27.9473 8.20328 30.3504 8.61374 30.3504 8.61374V13.7811H27.702C25.0937 13.7811 24.2797 15.3999 24.2797 17.0601V20.9995H30.1039L29.173 27.0703H24.2797V41.7445C34.3197 40.1692 41.999 31.482 41.999 20.9995Z"
                            fill="#E40012" />
@@ -181,7 +180,8 @@
                <li class="footer__item"><a class="footer__link" href="tel:+7(800)77-82-35">+7 (800) 77-82-35</a>
                </li>
                <li class="footer__item"><a class="footer__link"
-                     href="mailto:aanar1k14@gmail.com">aanar1k14@gmail.com</a></li>
+                     href="mailto:aanar1k14@gmail.com">aanar1k14@gmail.com</a>
+               </li>
             </ul>
          </div>
       </div>

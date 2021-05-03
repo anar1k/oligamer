@@ -45,10 +45,12 @@ input {
 }
 
 summary {
+  outline: none;
+  border: none;
   display: block;
 }
 
-summary::-webkit-details-marker {
+summary::marker {
   display: none;
 }
 
