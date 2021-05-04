@@ -1,6 +1,29 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+html,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
 ::-webkit-scrollbar {
@@ -657,11 +680,10 @@ summary::-webkit-details-marker {
   border-radius: 40px;
   border: none;
   outline: none;
-  margin: 0 auto;
+  margin: 0 auto 38px;
   width: 310px;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 38px;
 }
 
 .feedback__input::-webkit-input-placeholder {
@@ -993,6 +1015,204 @@ summary::-webkit-details-marker {
   padding: 15px;
   border: 5px solid red;
   margin: 15px;
+}
+
+.content-bc {
+  background-image: url(../img/feedback-bc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.enter-profile__wrapper {
+  text-align: center;
+}
+
+.enter-profile__info {
+  display: inline-block;
+  padding: 60px 0;
+}
+
+.enter-profile__heading {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #ffffff;
+  padding-bottom: 34px;
+}
+
+.enter-profile__text {
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.enter-profile__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.enter-profile__label {
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.enter-profile__input {
+  padding: 15px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  margin: 0 auto 16px;
+  width: 310px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.enter-profile__input::-webkit-input-placeholder {
+  color: #c6c6c6;
+}
+
+.enter-profile__input:-ms-input-placeholder {
+  color: #c6c6c6;
+}
+
+.enter-profile__input::-ms-input-placeholder {
+  color: #c6c6c6;
+}
+
+.enter-profile__input::placeholder {
+  color: #c6c6c6;
+}
+
+.enter-profile__btn {
+  margin: 10px auto 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 257px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 17px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  background: linear-gradient(93.28deg, #ff1e2c -1.4%, #b70011 90.07%);
+  border-radius: 30px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.enter-profile__btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.enter-profile__new {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.enter-profile__link {
+  font-size: 14px;
+  line-height: 160%;
+  color: #b4b4b4;
+  opacity: 0.8;
+}
+
+.enter-profile__link:hover {
+  color: #ffffff;
+}
+
+.forgot-password__text {
+  padding-bottom: 20px;
+}
+
+@media (min-height: 880px) {
+  .main-authorization {
+    height: calc(100vh - 350px);
+  }
+}
+
+@media (min-height: 800px) {
+  .main-forgot-password {
+    height: calc(100vh - 350px);
+  }
+}
+
+.privacy-text__text {
+  font-size: 14px;
+  line-height: 160%;
+  color: #b4b4b4;
+  opacity: 0.8;
+  padding-top: 20px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.privacy-text__link {
+  font-size: 14px;
+  line-height: 160%;
+  color: #b4b4b4;
+  opacity: 0.8;
+}
+
+.privacy-text__link:hover {
+  color: #ffffff;
+}
+
+.privacy__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 140%;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.privacy__list {
+  list-style: decimal;
+  list-style-position: inside;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.privacy__item {
+  padding: 10px 0;
+}
+
+.privacy__info {
+  padding: 20px;
+}
+
+.privacy__text {
+  font-size: 16px;
+  line-height: 160%;
+  color: #ccc;
+}
+
+@media (max-width: 767px) {
+  .privacy__title {
+    font-size: 28px;
+  }
 }
 
 .footer {

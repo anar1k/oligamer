@@ -1,6 +1,28 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+html,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
 ::-webkit-scrollbar {
