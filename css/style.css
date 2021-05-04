@@ -50,7 +50,7 @@ summary {
   display: block;
 }
 
-summary::marker {
+summary::-webkit-details-marker {
   display: none;
 }
 
@@ -246,6 +246,10 @@ summary::marker {
 
 .search-form__input::placeholder {
   color: #c6c6c6;
+}
+
+.search-form__input:focus {
+  background: #7b7b7b;
 }
 
 .search-form__img {

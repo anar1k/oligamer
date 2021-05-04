@@ -64,6 +64,9 @@
     &::placeholder {
       color: #c6c6c6;
     }
+    &:focus {
+      background: #7b7b7b;
+    }
   }
   &__img {
     transition: 0.4s;
