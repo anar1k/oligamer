@@ -144,6 +144,10 @@ summary::-webkit-details-marker {
   content: none;
 }
 
+.pagination__item:last-child {
+  padding-right: 0;
+}
+
 .pagination__link {
   font-size: 16px;
   line-height: 150%;
