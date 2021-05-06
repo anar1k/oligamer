@@ -53,7 +53,12 @@
 }
 
 @media (max-width: 767px) {
-  .category__wrapper {
-    grid-template-columns: 330px;
+  .category {
+    &__wrapper {
+      grid-template-columns: 100%;
+    }
+    &__item {
+      width: 100%;
+    }
   }
 }
