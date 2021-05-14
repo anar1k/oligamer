@@ -27,18 +27,29 @@
     opacity: 0.8;
   }
   &__form {
+    padding: 0 8px;
     display: flex;
     flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  &__name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
   }
   &__label {
+    max-width: 150px;
+    margin: 0 10px 10px;
+    cursor: pointer;
     text-align: left;
-    padding: 10px;
     font-size: 16px;
     line-height: 160%;
     color: #ffffff;
     opacity: 0.8;
   }
   &__input {
+    width: 100%;
     padding: 15px;
     background: #ffffff;
     box-sizing: border-box;
@@ -46,7 +57,6 @@
     border: none;
     outline: none;
     margin-bottom: 16px;
-    width: 304px;
     font-size: 16px;
     line-height: 20px;
     &::placeholder {

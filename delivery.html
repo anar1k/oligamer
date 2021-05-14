@@ -135,6 +135,21 @@
       </section>
    </main>
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script>
+      $(function () {
+         $('#burger-menu-link').on('click', function (open) {
+            var menuItem = $(open.currentTarget);
+
+            if (menuItem.attr('aria-expanded') === 'true') {
+               $(this).attr('aria-expanded', 'false');
+            } else {
+               $(this).attr('aria-expanded', 'true');
+            }
+         });
+      });
+   </script>
+
    <script src="js/footer.js"></script>
    <script src="js/header.js"></script>
 </body>

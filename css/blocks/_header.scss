@@ -110,19 +110,8 @@
 
 .burger-menu {
   display: none;
-  &__input:checked ~ &__open {
-    display: block;
-  }
-  &__input:checked ~ &__label &__img {
-    transform: rotate(180deg);
-  }
-  &__input {
-    display: none;
-  }
-  &__label {
-    cursor: pointer;
-  }
   &__img {
+    cursor: pointer;
     transition: 1s;
   }
   &__open {
@@ -158,6 +147,11 @@
     color: #959699;
   }
 }
+
+#burger-menu-link[aria-expanded="true"] ~ .burger-menu__open {
+  display: block;
+}
+
 @media (max-width: 1439px) {
   .header {
     &__menu {

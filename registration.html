@@ -22,36 +22,53 @@
       </div>
       <section class="enter-profile">
          <div class="enter-profile__wrapper container">
-            <h3 class="enter-profile__heading">Создайте аккаунт</h3>
-            <form class="enter-profile__form" action="#">
-               <label class="enter-profile__label" for="">Имя</label>
-               <input required="required" autocomplete="name" class="enter-profile__input" type="text"
-                  placeholder="Иван">
-               <label class="enter-profile__label" for="">Фамилия</label>
-               <input required="required" autocomplete="name" class="enter-profile__input" type="text"
-                  placeholder="Иванов">
-               <label class="enter-profile__label" for="">Адрес эл. почты</label>
-               <input required="required" autocomplete="email" class="enter-profile__input" type="email"
-                  placeholder="E-mail">
-               <label class="enter-profile__label" for="">Пароль</label>
-               <input required="required" autocomplete="password" class="enter-profile__input" type="password"
-                  placeholder="Пароль">
-               <label class="enter-profile__label" for="">Подтвердите пароль</label>
-               <input required="required" autocomplete="password" class="enter-profile__input" type="password"
-                  placeholder="Подтвердите пароль">
-               <button class="enter-profile__btn" type="submit">Регистрация</button>
-            </form>
-            <div class="enter-profile__privacy privacy-text">
-               <p class="privacy-text__text">Нажимая кнопку Регистрация, вы
-                  принимаете <a class="privacy-text__link" href="privacy.html">Политику
-                     использования данных</a>.</p>
+            <div class="enter-profile__info">
+               <h3 class="enter-profile__heading">Создайте аккаунт</h3>
+               <form class="enter-profile__form" action="#">
+                  <div class="enter-profile__name">
+                     <input required="required" autocomplete="name" class="enter-profile__input" type="text"
+                        placeholder="*Имя">
+                     <input required="required" autocomplete="name" class="enter-profile__input" type="text"
+                        placeholder="*Фамилия">
+                  </div>
+                  <input required="required" autocomplete="name" class="enter-profile__input" type="text"
+                     placeholder="*Никнейм">
+                  <input required="required" autocomplete="email" class="enter-profile__input" type="email"
+                     placeholder="*E-mail">
+                  <input required="required" autocomplete="password" class="enter-profile__input" type="password"
+                     placeholder="*Пароль">
+                  <input required="required" autocomplete="password" class="enter-profile__input" type="password"
+                     placeholder="*Подтвердите пароль">
+                  <button class="enter-profile__btn" type="submit">Регистрация</button>
+               </form>
+               <div class="enter-profile__privacy privacy-text">
+                  <p class="privacy-text__text">Нажимая кнопку Регистрация, вы
+                     принимаете <a class="privacy-text__link" href="privacy.html">Политику
+                        использования данных</a>.</p>
+               </div>
             </div>
          </div>
       </section>
    </main>
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script>
+      $(function () {
+         $('#burger-menu-link').on('click', function (open) {
+            var menuItem = $(open.currentTarget);
+
+            if (menuItem.attr('aria-expanded') === 'true') {
+               $(this).attr('aria-expanded', 'false');
+            } else {
+               $(this).attr('aria-expanded', 'true');
+            }
+         });
+      });
+   </script>
+
    <script src="js/footer.js"></script>
    <script src="js/header.js"></script>
+
 </body>
 
 </html>

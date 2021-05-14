@@ -28,9 +28,8 @@ var headerText = `<div class="header__wrapper container">
             </nav>
          </div>
          <div class="header__burger burger-menu">
-            <input class="burger-menu__input" type="checkbox" id="burger-menu">
-            <label class="burger-menu__label" for="burger-menu"><img class="burger-menu__img" src="img/burger.svg"
-                  alt="MENU"></label>
+            <a id="burger-menu-link" aria-expanded="false"><img class="burger-menu__img" src="img/burger.svg"
+                  alt="MENU"></a>
             <div class="burger-menu__open">
                <ul class="burger-menu__list center">
                   <li class="burger-menu__item">

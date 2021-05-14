@@ -22,25 +22,45 @@
       </div>
       <section class="enter-profile">
          <div class="enter-profile__wrapper container">
-            <h3 class="enter-profile__heading">Авторизуйтесь</h3>
-            <form class="enter-profile__form" action="#">
-               <input required="required" autocomplete="email" class="enter-profile__input" type="email"
-                  placeholder="E-mail">
-               <input required="required" autocomplete="password" class="enter-profile__input" type="password"
-                  placeholder="Пароль">
-               <button class="enter-profile__btn" type="submit">Войти</button>
-            </form>
-            <div class="enter-profile__new">
-               <a class="enter-profile__link enter-profile__link_padding" href="forgot-password.html">Забыли
-                  пароль?</a>
-               <a class="enter-profile__link" href="registration.html">Зарегистрироваться</a>
+            <div class="enter-profile__info">
+               <h3 class="enter-profile__heading">Авторизуйтесь</h3>
+               <form class="enter-profile__form" action="#">
+                  <input required="required" autocomplete="email" class="enter-profile__input" type="email"
+                     placeholder="E-mail">
+                  <input required="required" autocomplete="password" class="enter-profile__input" type="password"
+                     placeholder="Пароль">
+                  <label class="enter-profile__label"><input style="cursor: pointer; margin-right: 6px;"
+                        type="checkbox">Запомнить
+                     меня</label>
+                  <button class="enter-profile__btn" type="submit">Войти</button>
+               </form>
+               <div class="enter-profile__new">
+                  <a class="enter-profile__link enter-profile__link_padding" href="forgot-password.html">Забыли
+                     пароль?</a>
+                  <a class="enter-profile__link" href="registration.html">Зарегистрироваться</a>
+               </div>
             </div>
          </div>
       </section>
    </main>
 
-   <script src="js/header.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script>
+      $(function () {
+         $('#burger-menu-link').on('click', function (open) {
+            var menuItem = $(open.currentTarget);
+
+            if (menuItem.attr('aria-expanded') === 'true') {
+               $(this).attr('aria-expanded', 'false');
+            } else {
+               $(this).attr('aria-expanded', 'true');
+            }
+         });
+      });
+   </script>
+
    <script src="js/footer.js"></script>
+   <script src="js/header.js"></script>
 
 </body>
 
