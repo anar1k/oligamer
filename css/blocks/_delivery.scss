@@ -52,6 +52,11 @@
     }
   }
 
+  &[open] &__icon {
+    stroke: #ff0000;
+    fill: #ff0000;
+  }
+
   &__heading {
     padding-top: 0;
   }

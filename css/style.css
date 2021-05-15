@@ -1009,6 +1009,11 @@ summary::-webkit-details-marker {
   fill: white;
 }
 
+.payment[open] .payment__icon {
+  stroke: #ff0000;
+  fill: #ff0000;
+}
+
 .payment__heading {
   padding-top: 0;
 }
