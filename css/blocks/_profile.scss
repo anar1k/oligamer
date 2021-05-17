@@ -1,0 +1,71 @@
+.profile__nav {
+  margin: 50px 0 100px;
+}
+.profile-list {
+  display: flex;
+  justify-content: center;
+  &__item {
+    margin-right: 100px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      border-bottom: 5px solid #da2020;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: #ffffff;
+  }
+}
+
+.profile-info {
+  display: block;
+  &__avatar {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border-radius: 50%;
+    margin: 100px auto;
+    overflow: hidden;
+  }
+  &__upload {
+    position: absolute;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 15px 120px;
+    bottom: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+    &::before {
+      content: (url(../img/camera-solid.svg));
+      transform: translate(50%, 300%);
+      font-size: 50px;
+      display: inline-block;
+    }
+    &::after {
+      content: "Загрузить";
+      font-weight: bold;
+      color: #fff;
+      display: block;
+      transform: translate(0, 1050%);
+      font-size: 14px;
+    }
+  }
+}
+
+.profile-guard {
+  display: none;
+}

@@ -3,13 +3,13 @@ var headerText = `<div class="header__wrapper container">
             <a href="index.html"><img class="logo__img" src="img/logo.png" alt="logo"></a>
          </div>
          <nav class="header__menu menu">
-            <div class="menu__item">
+            <div class="menu__item" id="menu-item-catalog">
                <a class="menu__link" href="catalog.html">Каталог</a>
             </div>
-            <div class="menu__item">
+            <div class="menu__item" id="menu-item-delivery">
                <a class="menu__link" href="delivery.html">Доставка</a>
             </div>
-            <div class="menu__item">
+            <div class="menu__item" id="menu-item-contacts">
                <a class="menu__link" href="#">Контакты</a>
             </div>
          </nav>

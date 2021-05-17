@@ -8,7 +8,8 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   <title>Main</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <title>Авторизация</title>
 </head>
 
 <body>
@@ -27,8 +28,7 @@
                <form class="enter-profile__form" action="#">
                   <input required="required" autocomplete="email" class="enter-profile__input" type="email"
                      placeholder="E-mail">
-                  <input required="required" autocomplete="password" class="enter-profile__input" type="password"
-                     placeholder="Пароль">
+                  <input required="required" class="enter-profile__input" type="password" placeholder="Пароль">
                   <label class="enter-profile__label"><input style="cursor: pointer; margin-right: 6px;"
                         type="checkbox">Запомнить
                      меня</label>
@@ -44,7 +44,9 @@
       </section>
    </main>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="js/footer.js"></script>
+   <script src="js/header.js"></script>
+
    <script>
       $(function () {
          $('#burger-menu-link').on('click', function (open) {
@@ -58,9 +60,6 @@
          });
       });
    </script>
-
-   <script src="js/footer.js"></script>
-   <script src="js/header.js"></script>
 
 </body>
 
