@@ -64,9 +64,6 @@
     &::placeholder {
       color: #c6c6c6;
     }
-    &:invalid {
-      border: 3px solid #900;
-    }
   }
   &__btn {
     margin: 10px auto 0;
@@ -81,10 +78,6 @@
     color: #ffffff;
     background: linear-gradient(93.28deg, #ff1e2c -1.4%, #b70011 90.07%);
     border-radius: 30px;
-    transition: 0.4s;
-    &:hover {
-      transform: scale(1.05);
-    }
     &_none {
       display: none;
     }

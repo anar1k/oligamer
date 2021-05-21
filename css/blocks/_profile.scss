@@ -1,14 +1,53 @@
-.profile__nav {
-  margin: 50px 0 100px;
+.profile {
+  &__wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  &__nav {
+    margin: 50px 0;
+  }
+
+  &__label {
+    font-size: 16px;
+    line-height: 170%;
+    color: #ffffff;
+  }
+  &__input {
+    margin-top: 5px;
+    width: 100%;
+    padding: 15px;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    &::placeholder {
+      color: #c6c6c6;
+    }
+  }
+  &__btn {
+    margin: 10px 0;
+    box-sizing: border-box;
+    width: 257px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 11px 17px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    background: linear-gradient(93.28deg, #ff1e2c -1.4%, #b70011 90.07%);
+    border-radius: 30px;
+  }
 }
+
 .profile-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   &__item {
-    margin-right: 100px;
-    &:last-child {
-      margin-right: 0;
-    }
     &.active {
       border-bottom: 5px solid #da2020;
     }
@@ -22,50 +61,134 @@
   }
 }
 
-.profile-info {
-  display: block;
-  &__avatar {
-    height: 300px;
-    width: 300px;
-    position: relative;
-    border-radius: 50%;
-    margin: 100px auto;
-    overflow: hidden;
-  }
+.avatar {
   &__upload {
     position: absolute;
-    outline: none;
-    color: transparent;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    padding: 15px 120px;
-    bottom: 0;
-    box-sizing: border-box;
+    outline: none;
+    opacity: 0;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
+    padding-bottom: 20px;
     &:hover {
       opacity: 1;
     }
-    &::before {
-      content: (url(../img/camera-solid.svg));
-      transform: translate(50%, 300%);
-      font-size: 50px;
-      display: inline-block;
-    }
-    &::after {
-      content: "Загрузить";
-      font-weight: bold;
-      color: #fff;
-      display: block;
-      transform: translate(0, 1050%);
-      font-size: 14px;
-    }
+  }
+  &__text {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 170%;
+    color: #ffffff;
+  }
+}
+
+.profile-info {
+  &__avatar {
+    height: 180px;
+    width: 180px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #da2020;
+  }
+  &__form {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__names {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
   }
 }
 
 .profile-guard {
   display: none;
+  &__heading {
+    font-size: 26px;
+    line-height: 37px;
+    color: #ffffff;
+    border-bottom: 5px solid #a90000;
+    border-left: 5px solid #a90000;
+    padding: 5px 10px 0;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  &__link {
+    width: 108px;
+    font-size: 14px;
+    line-height: 160%;
+    color: #b4b4b4;
+    opacity: 0.8;
+    margin-bottom: 40px;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  /*   &__details {
+    margin: 50px 0;
+  }
+  &__summary {
+    cursor: pointer;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 37px;
+    color: #ffffff;
+    border-bottom: 5px solid #a90000;
+    border-left: 5px solid #a90000;
+    &:hover {
+      color: #a90000;
+    }
+  } */
+}
+
+@media (max-width: 767px) {
+  .profile {
+    &__wrapper {
+      padding: 0 8px;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+
+  .profile-list {
+    &__link {
+      font-size: 22px;
+    }
+  }
+
+  .profile-info {
+    &__avatar {
+      margin: 0 auto;
+    }
+  }
 }
