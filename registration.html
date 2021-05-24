@@ -27,66 +27,27 @@
                <h3 class="enter-profile__heading">Создайте аккаунт</h3>
                <form class="enter-profile__form" action="#">
                   <div class="enter-profile__name">
-                     <input id="firstName" required onkeyup="checkParams()" class="enter-profile__input" type="text"
-                        placeholder="*Имя">
-                     <input id="lastName" required onkeyup="checkParams()" class="enter-profile__input" type="text"
-                        placeholder="*Фамилия">
+                     <input required class="enter-profile__input" type="text" placeholder="*Имя">
+                     <input required class="enter-profile__input" type="text" placeholder="*Фамилия">
                   </div>
-                  <input id="nickname" required onkeyup="checkParams()" autocomplete="name" class="enter-profile__input"
-                     type="text" placeholder="*Никнейм">
-                  <input id="email" required onkeyup="checkParams()" autocomplete="email" class="enter-profile__input"
-                     type="email" placeholder="*E-mail">
-                  <input id="password" required onkeyup="checkParams()" class="enter-profile__input" type="password"
-                     placeholder="*Пароль">
-                  <input id="repeatPassword" required onkeyup="checkParams()" class="enter-profile__input"
-                     type="password" placeholder="*Подтвердите пароль">
-                  <button id="submit" class="enter-profile__btn" type="submit">Регистрация</button>
+                  <input required autocomplete="name" class="enter-profile__input" type="text" placeholder="*Никнейм">
+                  <input required autocomplete="email" class="enter-profile__input" type="email" placeholder="*E-mail">
+                  <input required class="enter-profile__input" type="password" placeholder="*Пароль">
+                  <input required class="enter-profile__input" type="password" placeholder="*Подтвердите пароль">
+                  <button class="enter-profile__btn" type="submit">Регистрация</button>
                </form>
                <div class="enter-profile__privacy privacy-text">
-                  <p class="privacy-text__text">Нажимая кнопку Регистрация, вы
-                     принимаете <a class="privacy-text__link" href="privacy.html">Политику
-                        использования данных</a>.</p>
+                  <span>Нажимая кнопку Регистрация, вы принимаете</span>
+                  <a class="privacy-text__link" href="privacy.html">Политику использования данных.</a>
                </div>
             </div>
          </div>
       </section>
    </main>
 
-   <script>
-      /* Функция на проверку введенности inputov */
-      function checkParams() {
-         var email = $('#email').val();
-         var password = $('#password').val();
-         var repeatPassword = $('#repeatPassword').val();
-         var firstName = $('#firstName').val();
-         var lastName = $('#lastName').val();
-         var nickname = $('#nickname').val();
-
-         if (email.length != 0 && password.length >= 7 && repeatPassword.length >= 7 && password == repeatPassword && firstName.length != 0 && lastName.length != 0 && nickname.length != 0) {
-            $('#submit').click(function () {
-               window.location.href = 'profile.html';
-               return false;
-            });
-         }
-      }
-   </script>
-
    <script src="js/footer.js"></script>
    <script src="js/header.js"></script>
-
-   <script>
-      $(function () {
-         $('#burger-menu-link').on('click', function (open) {
-            var menuItem = $(open.currentTarget);
-
-            if (menuItem.attr('aria-expanded') === 'true') {
-               $(this).attr('aria-expanded', 'false');
-            } else {
-               $(this).attr('aria-expanded', 'true');
-            }
-         });
-      });
-   </script>
+   <script src="js/main.js"></script>
 
 </body>
 

@@ -48,18 +48,19 @@
                <form class="profile-info__form">
                   <div class="profile-info__names">
                      <label class="profile__label">Имя
-                        <input required class="profile__input" type="text" placeholder="Имя">
+                        <input required class="profile__input" type="text" placeholder="Имя" value="Тут инфа">
                      </label>
                      <label class="profile__label">Фамилия
-                        <input required class="profile__input" type="text" placeholder="Фамилия">
+                        <input required class="profile__input" type="text" placeholder="Фамилия" value="Тут инфа">
                      </label>
                   </div>
                   <label class="profile__label">Никнейм
                      <input autocomplete="nickname" required class="profile__input" type="nickname"
-                        placeholder="Никнейм">
+                        placeholder="Никнейм" value="Тут инфа">
                   </label>
                   <label class="profile__label">Почта
-                     <input autocomplete="email" required class="profile__input" type="email" placeholder="E-mail">
+                     <input autocomplete="email" required class="profile__input" type="email" placeholder="E-mail"
+                        value="Тут инфа">
                   </label>
                   <button class="profile__btn" type="submit">Сохранить</button>
                </form>
@@ -82,38 +83,7 @@
 
    <script src="js/footer.js"></script>
    <script src="js/header.js"></script>
-
-   <script>
-      function openTab(evt, tab) {
-
-         var i, tabcontent, tablinks;
-
-         tabcontent = document.getElementsByClassName("profile__content");
-         for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-         }
-
-         tablinks = document.getElementsByClassName("profile-list__item");
-         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove("active");
-         }
-
-         document.querySelector(".profile-" + tab).style.display = "block";
-         evt.currentTarget.parentElement.classList.add("active");
-      }
-
-      $(function () {
-         $('#burger-menu-link').on('click', function (open) {
-            var menuItem = $(open.currentTarget);
-
-            if (menuItem.attr('aria-expanded') === 'true') {
-               $(this).attr('aria-expanded', 'false');
-            } else {
-               $(this).attr('aria-expanded', 'true');
-            }
-         });
-      });
-   </script>
+   <script src="js/main.js"></script>
 
 </body>
 

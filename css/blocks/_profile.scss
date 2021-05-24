@@ -16,7 +16,7 @@
     margin-top: 5px;
     width: 100%;
     padding: 15px;
-    background: #ffffff;
+    background: #7b7b7b;
     box-sizing: border-box;
     border-radius: 40px;
     border: none;
@@ -24,8 +24,14 @@
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 20px;
+    transition: 0.4s;
+    color: #c6c6c6;
     &::placeholder {
       color: #c6c6c6;
+    }
+    &:focus {
+      background: #ffffff;
+      color: #000000;
     }
   }
   &__btn {
@@ -49,7 +55,7 @@
   justify-content: space-between;
   &__item {
     &.active {
-      border-bottom: 5px solid #da2020;
+      border-bottom: 5px solid #a90000;
     }
   }
   &__link {
@@ -112,7 +118,6 @@
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #da2020;
   }
   &__form {
     padding: 50px 0;
@@ -132,7 +137,6 @@
     font-size: 26px;
     line-height: 37px;
     color: #ffffff;
-    border-bottom: 5px solid #a90000;
     border-left: 5px solid #a90000;
     padding: 5px 10px 0;
   }
@@ -148,6 +152,7 @@
     color: #b4b4b4;
     opacity: 0.8;
     margin-bottom: 40px;
+    transition: 0.4s;
     &:hover {
       color: #ffffff;
     }

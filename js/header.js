@@ -22,8 +22,8 @@ var headerText = `<div class="header__wrapper container">
             <nav class="header__icons icons">
                <a class="icons__link" href="authorization.html"><img class="icons__img" src="img/profile.svg"
                      alt="profile"></a>
-               <a class="icons__link" href="#">
-                  <div class="icons__circle">5</div><img class="icons__img" src="img/busket.svg" alt="cart">
+               <a class="icons__link" href="busket.html">
+                  <div class="icons__circle"></div><img class="icons__img" src="img/busket.svg" alt="cart">
                </a>
             </nav>
          </div>
@@ -41,7 +41,7 @@ var headerText = `<div class="header__wrapper container">
                   </li>
                   <li class="burger-menu__item">МЕНЮ</li>
                   <li class="burger-menu__item"><a class="burger-menu__link" href="authorization.html">Профиль</a></li>
-                  <li class="burger-menu__item"><a class="burger-menu__link" href="#">Корзина</a></li>
+                  <li class="burger-menu__item"><a class="burger-menu__link" href="busket.html">Корзина</a></li>
                   <li class="burger-menu__item"><a class="burger-menu__link" href="catalog.html">Каталог</a></li>
                   <li class="burger-menu__item"><a class="burger-menu__link" href="delivery.html">Доставка</a></li>
                   <li class="burger-menu__item"><a class="burger-menu__link" href="#">Контакты</a></li>

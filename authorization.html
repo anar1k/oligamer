@@ -25,15 +25,16 @@
          <div class="enter-profile__wrapper container">
             <div class="enter-profile__info">
                <h3 class="enter-profile__heading">Авторизуйтесь</h3>
-               <form id="form" name="" method="POST" action="" class="enter-profile__form">
-                  <input required onkeyup="checkParams()" id="email" autocomplete="email" class="enter-profile__input"
-                     type="email" placeholder="E-mail">
-                  <input required onkeyup="checkParams()" id="password" minlength="7" class="enter-profile__input"
-                     type="password" placeholder="Пароль">
+               <form action="#" class="enter-profile__form">
+
+                  <input required autocomplete="email" class="enter-profile__input" type="email" placeholder="E-mail">
+
+                  <input required minlength="7" class="enter-profile__input" type="password" placeholder="Пароль">
+
                   <label class="enter-profile__label"><input style="cursor: pointer; margin-right: 6px;"
                         type="checkbox">Запомнить
                      меня</label>
-                  <button id="submit" class="enter-profile__btn" type="submit">Войти</button>
+                  <button class="enter-profile__btn disabled" type="submit">Войти</button>
                </form>
                <div class="enter-profile__new">
                   <a class="enter-profile__link enter-profile__link_padding" href="forgot-password.html">Забыли
@@ -45,37 +46,9 @@
       </section>
    </main>
 
-   <script>
-      /* Функция на проверку введенности inputov */
-      function checkParams() {
-         var email = $('#email').val();
-         var password = $('#password').val();
-
-         if (email.length != 0 && password.length >= 7) {
-            $('#submit').click(function () {
-               window.location.href = 'profile.html';
-               return false;
-            });
-         }
-      }
-   </script>
-
    <script src="js/footer.js"></script>
    <script src="js/header.js"></script>
-
-   <script>
-      $(function () {
-         $('#burger-menu-link').on('click', function (open) {
-            var menuItem = $(open.currentTarget);
-
-            if (menuItem.attr('aria-expanded') === 'true') {
-               $(this).attr('aria-expanded', 'false');
-            } else {
-               $(this).attr('aria-expanded', 'true');
-            }
-         });
-      });
-   </script>
+   <script src="js/main.js"></script>
 
 </body>
 

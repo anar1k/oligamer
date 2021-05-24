@@ -51,7 +51,7 @@
 .search-form {
   position: relative;
   &__input {
-    background: #ffffff;
+    background: #7b7b7b;
     font-size: 16px;
     line-height: 150%;
     box-sizing: border-box;
@@ -65,7 +65,7 @@
       color: #c6c6c6;
     }
     &:focus {
-      background: #7b7b7b;
+      background: #ffffff;
     }
   }
   &__img {
@@ -91,7 +91,6 @@
     }
   }
   &__circle {
-    /* display: none; */
     position: absolute;
     top: -6px;
     left: 22px;
@@ -105,6 +104,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &_none {
+      display: none;
+    }
   }
 }
 

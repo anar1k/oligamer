@@ -73,21 +73,9 @@
 
    <script src="js/footer.js"></script>
    <script src="js/header.js"></script>
-
+   <script src="js/main.js"></script>
    <script>
-      document.getElementById("menu-item-catalog").classList.add("menu__item_bc");
-
-      $(function () {
-         $('#burger-menu-link').on('click', function (open) {
-            var menuItem = $(open.currentTarget);
-
-            if (menuItem.attr('aria-expanded') === 'true') {
-               $(this).attr('aria-expanded', 'false');
-            } else {
-               $(this).attr('aria-expanded', 'true');
-            }
-         });
-      });
+      $("#menu-item-catalog").addClass("menu__item_bc");
    </script>
 
 </body>

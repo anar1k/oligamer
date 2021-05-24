@@ -140,18 +140,6 @@
    <script src="js/header.js"></script>
    <script src="js/aos.js"></script>
    <script>
-      $(function () {
-         $('#burger-menu-link').on('click', function (open) {
-            var menuItem = $(open.currentTarget);
-
-            if (menuItem.attr('aria-expanded') === 'true') {
-               $(this).attr('aria-expanded', 'false');
-            } else {
-               $(this).attr('aria-expanded', 'true');
-            }
-         });
-      });
-
       AOS.init({
          offset: 200,
          duration: 1000,
@@ -159,6 +147,8 @@
          delay: 100,
       });
    </script>
+   <script src="js/main.js"></script>
+
 
 </body>
 
