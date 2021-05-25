@@ -15,10 +15,10 @@
 <body>
 
    <main>
-      <div class="pagination">
-         <ul class="pagination__list center">
-            <li class="pagination__item"><a class="pagination__link" href="index.html">Главная</a></li>
-            <li class="pagination__item">Доставка</li>
+      <div class="breadcrumb">
+         <ul class="breadcrumb__list center">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+            <li class="breadcrumb__item">Доставка</li>
          </ul>
       </div>
       <section class="delivery">
@@ -36,9 +36,9 @@
                   ваш город.</p>
                <ul class="delivery__list">
                   <li class="delivery__item">
-                     <details class="delivery__details payment">
-                        <summary class="payment__summary">Оплата: онлайн, наличными при получении
-                           <svg class="payment__icon" width="16" height="16" viewBox="0 0 20 20"
+                     <details class="delivery__details payment-info">
+                        <summary class="payment-info__summary">Оплата: онлайн, наличными при получении
+                           <svg class="payment-info__icon" width="16" height="16" viewBox="0 0 20 20"
                               xmlns="http://www.w3.org/2000/svg">
                               <circle fill="none" stroke-width="1.1" cx="10" cy="10" r="9"></circle>
                               <circle stroke="none" cx="10.44" cy="14.42" r="1.05"></circle>
@@ -47,8 +47,8 @@
                               </path>
                            </svg>
                         </summary>
-                        <div class="payment__info">
-                           <h4 class="payment__heading delivery__heading">Онлайн оплата по счету</h4>
+                        <div class="payment-info__content">
+                           <h4 class="payment-info__heading delivery__heading">Онлайн оплата по счету</h4>
                            После согласования всех деталей заказа вы получите счёт, который
                            можно будет оплатить в
                            любом
@@ -104,7 +104,9 @@
    <script src="js/header.js"></script>
    <script src="js/main.js"></script>
    <script>
-      $("#menu-item-delivery").addClass("menu__item_bc");
+      $(function () {
+         $("#menu-item-delivery").addClass("menu__item_bc");
+      });
    </script>
 
 </body>

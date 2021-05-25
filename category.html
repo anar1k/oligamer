@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <title>Каталог</title>
+</head>
+
+<body>
+
+   <main>
+      <div class="breadcrumb">
+         <ul class="breadcrumb__list center">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+            <li class="breadcrumb__item">Каталог</li>
+         </ul>
+      </div>
+      <div class="category">
+         <div class="category__wrapper center">
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/cpu.png" alt="photo">
+               <span class="category__text">Процессоры</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/motherboard.png" alt="photo">
+               <span class="category__text">Материнские платы</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/video-card.png" alt="photo">
+               <span class="category__text">Видеокарты</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/ram.png" alt="photo">
+               <span class="category__text">Оперативная память</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/cooling.png" alt="photo">
+               <span class="category__text">Охлаждение</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/hdd.png" alt="photo">
+               <span class="category__text">Жесткие диски</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/ssd.png" alt="photo">
+               <span class="category__text">SSD накопители</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/power-supply.png" alt="photo">
+               <span class="category__text">Блоки питания</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/sound-card.png" alt="photo">
+               <span class="category__text">Звуковые карты</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/housing.png" alt="photo">
+               <span class="category__text">Корпуса</span>
+            </a>
+            <a href="catalog.html" class="category__item">
+               <img class="category__img" src="img/category/sale.png" alt="photo">
+               <span class="category__text">Скидки</span>
+            </a>
+         </div>
+      </div>
+   </main>
+
+   <script src="js/footer.js"></script>
+   <script src="js/header.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      $(function () {
+         $("#menu-item-category").addClass("menu__item_bc");
+      });
+   </script>
+
+</body>
+
+</html>

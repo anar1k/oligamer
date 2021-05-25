@@ -48,33 +48,6 @@
   margin-right: 33px;
   width: 248px;
 }
-.search-form {
-  position: relative;
-  &__input {
-    background: #7b7b7b;
-    font-size: 16px;
-    line-height: 150%;
-    box-sizing: border-box;
-    padding: 6px 19px;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    width: 100%;
-    transition: 0.4s;
-    &::placeholder {
-      color: #c6c6c6;
-    }
-    &:focus {
-      background: #ffffff;
-    }
-  }
-  &__img {
-    transition: 0.4s;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-  }
-}
 
 .header__icons {
   display: grid;

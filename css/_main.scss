@@ -38,6 +38,16 @@ summary {
   background-color: #bd0505;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 ul,
 ol {
   list-style: none;

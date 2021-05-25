@@ -46,9 +46,9 @@ var footerText = `<div class="footer__wrapper container">
             <h4 class="footer__heading">Покупателям</h4>
             <ul>
                <li class="footer__item"><a class="footer__link" href="privacy.html">Политика конфиденциальности</a></li>
-               <li class="footer__item"><a class="footer__link" href="#">Спецпредложения</a></li>
+               <li class="footer__item"><a class="footer__link" href="catalog.html">Спецпредложения</a></li>
                <li class="footer__item"><a class="footer__link" href="delivery.html">Доставка</a></li>
-               <li class="footer__item"><a class="footer__link" href="#">Оплата</a></li>
+               <li class="footer__item"><a class="footer__link" href="payment.html">Оплата</a></li>
             </ul>
          </div>
          <div class="footer__contacts">
@@ -64,10 +64,10 @@ var footerText = `<div class="footer__wrapper container">
       </div>`;
 
 function setfooter() {
-  var footer =  document.createElement("footer");
+  var footer = document.createElement("footer");
   footer.className = "footer";
-  footer.innerHTML = footerText ;
-  document.body.insertAdjacentElement('beforeend', footer );
+  footer.innerHTML = footerText;
+  document.body.insertAdjacentElement("beforeend", footer);
 }
 
 setfooter();

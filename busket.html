@@ -9,6 +9,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
    <script src="jquery.maskedinput.min.js"></script>
    <title>Корзина</title>
 </head>
@@ -16,10 +18,10 @@
 <body>
 
    <main>
-      <div class="pagination">
-         <ul class="pagination__list center">
-            <li class="pagination__item"><a class="pagination__link" href="index.html">Главная</a></li>
-            <li class="pagination__item">Корзина</li>
+      <div class="breadcrumb">
+         <ul class="breadcrumb__list center">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+            <li class="breadcrumb__item">Корзина</li>
          </ul>
       </div>
       <section class="cart">
@@ -85,7 +87,7 @@
                                  placeholder="*Край/Область/Регион">
                               <input class="cart-registration__input" required type="text"
                                  placeholder="*Адрес доставки (ул., дом и т.д)">
-                              <input class="cart-registration__input" required type="text"
+                              <input class="cart-registration__input" required type="number"
                                  placeholder="*Почтовый индекс">
                            </div>
                         </div>
@@ -145,8 +147,10 @@
                         </div>
                      </div>
                      <div class="cart-registration__text">
-                        <span>Подробную информацию о доставке и о оплате читать</span>
-                        <a class="cart-registration__link" href="delivery.html">Здесь.</a>
+                        <span>Подробную информацию о доставке читать </span>
+                        <a class="cart-registration__link" href="delivery.html">Здесь, </a>
+                        <span>о оплате читать </span>
+                        <a class="cart-registration__link" href="payment.html">Здесь.</a>
                      </div>
                      <button id="btnSubmit" type="submit" class="cart-products__btn">Оформить заказ</button>
                      <div class="privacy-text">
@@ -168,7 +172,7 @@
       /* Если нет товаров, то скрывает форму и сообщение, что пусто */
       $(function () {
          if (!$('.item-cart').length > 0) {
-            $('.cart__form').html('');
+            $('.cart__form').css('display', 'none');
             $('.cart__empty').css('display', 'block');
          }
       });
