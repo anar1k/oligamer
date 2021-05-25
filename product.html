@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <title>Название товара</title>
+</head>
+
+<body>
+
+   <main>
+      <div class="breadcrumb">
+         <ul class="breadcrumb__list center">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Главная</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="category.html">Каталог</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="catalog.html">Видеокарты</a></li>
+            <li class="breadcrumb__item">Видеокарта ZOTAC GeForce GT 710 Zone Edition [ZT-71301-20L]</li>
+         </ul>
+      </div>
+      <section class="product">
+         <div class="product__wrapper center">
+            <div class="product__card">
+               <div class="product__images">
+                  <img class="product__img-main" src="img/category/video-card.png" alt="photo">
+                  <div class="product__sliders">
+                     <div class="product__slider product__slider_active">
+                        <img class="product__img" src="img/category/video-card.png" alt="photo">
+                     </div>
+                     <div class="product__slider">
+                        <img class="product__img" src="img/category/cooling.png" alt="photo">
+                     </div>
+                     <div class="product__slider">
+                        <img class="product__img" src="img/category/hdd.png" alt="photo">
+                     </div>
+                     <div class="product__slider">
+                        <img class="product__img" src="img/category/sound-card.png" alt="photo">
+                     </div>
+                     <div class="product__slider">
+                        <img class="product__img" src="img/category/ssd.png" alt="photo">
+                     </div>
+                  </div>
+               </div>
+               <div class="product__container">
+                  <div class="product__info">
+                     <div class="product__left">
+                        <span class="product__title" href="#">Видеокарта ZOTAC GeForce GT 710 Zone
+                           Edition
+                           [ZT-71301-20L]</span>
+                        <span class="product__span">9 штук</span>
+                     </div>
+                     <div class="product__right">
+                        <span class="product__price">5 678 ₽</span>
+                        <form action="#">
+                           <button class="product__btn" type="submit">Купить</button>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="product__description">
+                     <h3 class="product__heading">Описание</h3>
+                     <p class="product__text">Видеокарта GIGABYTE GeForce GT 710 [GV-N710D5-1GL Rev2.0] – модель
+                        начального
+                        уровня, которая
+                        станет отличным выбором
+                        для пользователей, выбравших процессор без интегрированного видео. Устройство также будет
+                        полезно в
+                        случае, если
+                        возможности встроенного видеоадаптера по каким-то причинам не устраивают владельца системного
+                        блока, а высокий уровень
+                        производительности видеокарты неактуален.
+                        Главным компонентом видеокарты GIGABYTE GeForce GT 710 [GV-N710D5-1GL Rev2.0] является
+                        видеопроцессор GeForce GT 710,
+                        штатная частота которого равна 954 МГц. Объем памяти – 1 ГБ. Интерфейс подключения видеоадаптера
+                        –
+                        PCI-E 2.0.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="product__characteristics characteristics">
+               <h4 class="characteristics__title">Характеристики</h4>
+               <h5 class="characteristics__heading">Заводские данные</h5>
+               <div class="characteristics__container">
+                  <ul>
+                     <li class="characteristics__li">Гарантия</li>
+                     <li class="characteristics__li">Страна-производитель</li>
+                  </ul>
+                  <ul class="characteristics__info">
+                     <li class="characteristics__li">36 мес.</li>
+                     <li class="characteristics__li">Китай</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script src="js/footer.js"></script>
+   <script src="js/header.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      $('.product__slider').on('click', function (e) {
+         $('.product__slider').removeClass('product__slider_active');
+         $(this).parents('.product__images').find('.product__img-main').attr('src', $(this).children().attr('src'));
+         $(this).addClass('product__slider_active');
+      });
+   </script>
+
+</body>
+
+</html>

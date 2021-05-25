@@ -52,7 +52,8 @@
     &::placeholder {
       color: #c6c6c6;
     }
-    &:focus {
+    &:focus,
+    &:hover {
       background: #ffffff;
     }
   }
@@ -109,15 +110,18 @@
   }
 
   .breadcrumb {
+    &__list {
+      flex-wrap: wrap;
+    }
     &__item {
-      font-size: 14px;
-      padding-right: 10px;
+      font-size: 13px;
+      padding-right: 8px;
       &::after {
-        padding-left: 10px;
+        padding-left: 8px;
       }
     }
     &__link {
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 }

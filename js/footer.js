@@ -46,7 +46,6 @@ var footerText = `<div class="footer__wrapper container">
             <h4 class="footer__heading">Покупателям</h4>
             <ul>
                <li class="footer__item"><a class="footer__link" href="privacy.html">Политика конфиденциальности</a></li>
-               <li class="footer__item"><a class="footer__link" href="catalog.html">Спецпредложения</a></li>
                <li class="footer__item"><a class="footer__link" href="delivery.html">Доставка</a></li>
                <li class="footer__item"><a class="footer__link" href="payment.html">Оплата</a></li>
             </ul>
