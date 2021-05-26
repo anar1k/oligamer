@@ -351,6 +351,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .catalog__filters {
+    display: block !important;
+  }
+}
+
 @media (max-width: 767px) {
   .catalog {
     &__link {
