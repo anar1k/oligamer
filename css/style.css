@@ -537,7 +537,7 @@ summary::-webkit-details-marker {
   font-size: 16px;
   line-height: 160%;
   color: #ffffff;
-  width: 413px;
+  width: 422px;
   margin-bottom: 39px;
 }
 
@@ -2492,6 +2492,12 @@ summary::-webkit-details-marker {
   }
   .product-catalog__span {
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog__filters {
+    display: block !important;
   }
 }
 
