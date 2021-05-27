@@ -1360,6 +1360,10 @@ summary::-webkit-details-marker {
   }
 }
 
+.profile {
+  margin-bottom: 70px;
+}
+
 .profile__wrapper {
   max-width: 550px;
   margin: 0 auto;
@@ -1518,10 +1522,10 @@ summary::-webkit-details-marker {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .profile-info__form {
-  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

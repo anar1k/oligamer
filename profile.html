@@ -30,22 +30,22 @@
                <li class="profile-list__item"><a onclick="openTab(event, 'guard')"
                      class="profile-list__link">Безопасность</a></li>
             </ul>
-            <div class="profile__content profile-info">
-               <div class="profile-info__avatar avatar">
-                  <input id="avatar-upload" class="avatar__upload" type="file" accept="image/*">
-                  <div class="avatar__img" style="background: url(img/avatar.jpg); background-size: cover;"></div>
-                  <label for="avatar-upload" class="avatar__label">
-                     <svg width="32" height="32" aria-hidden="true" focusable="false" data-prefix="fas"
-                        data-icon="camera" class="svg-inline--fa fa-camera fa-w-16" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="white"
-                           d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z">
-                        </path>
-                     </svg>
-                     <span class="avatar__text">Загрузить</span>
-                  </label>
-               </div>
-               <form class="profile-info__form">
+            <form class="profile-info__form">
+               <div class="profile__content profile-info">
+                  <div class="profile-info__avatar avatar">
+                     <input id="avatar-upload" class="avatar__upload" type="file" accept="image/*">
+                     <div class="avatar__img" style="background: url(img/avatar.jpg); background-size: cover;"></div>
+                     <label for="avatar-upload" class="avatar__label">
+                        <svg width="32" height="32" aria-hidden="true" focusable="false" data-prefix="fas"
+                           data-icon="camera" class="svg-inline--fa fa-camera fa-w-16" role="img"
+                           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                           <path fill="white"
+                              d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z">
+                           </path>
+                        </svg>
+                        <span class="avatar__text">Загрузить</span>
+                     </label>
+                  </div>
                   <div class="profile-info__names">
                      <label class="profile__label">Имя
                         <input required class="profile__input" type="text" placeholder="Имя" value="Тут инфа">
@@ -62,19 +62,19 @@
                         value="Тут инфа">
                   </label>
                   <button class="profile__btn" type="submit">Сохранить</button>
-               </form>
-            </div>
-            <div class="profile__content profile-guard">
-               <h2 class="profile-guard__heading">Сменить пароль</h2>
-               <form class="profile-guard__form">
-                  <input required class="profile__input" type="password" placeholder="*Текущий пароль">
-                  <a class="profile-guard__link" href="forgot-password.html">Забыли
-                     пароль?</a>
-                  <input required class="profile__input" type="password" placeholder="*Новый пароль">
-                  <input required class="profile__input" type="password" placeholder="*Повторите пароль">
-                  <button class="profile__btn" type="submit">Сохранить</button>
-               </form>
-            </div>
+            </form>
+         </div>
+         <div class="profile__content profile-guard">
+            <h2 class="profile-guard__heading">Сменить пароль</h2>
+            <form class="profile-guard__form">
+               <input required class="profile__input" type="password" placeholder="*Текущий пароль">
+               <a class="profile-guard__link" href="forgot-password.html">Забыли
+                  пароль?</a>
+               <input required class="profile__input" type="password" placeholder="*Новый пароль">
+               <input required class="profile__input" type="password" placeholder="*Повторите пароль">
+               <button class="profile__btn" type="submit">Сохранить</button>
+            </form>
+         </div>
          </div>
       </section>
 
