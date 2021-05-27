@@ -104,6 +104,9 @@
    <script src="js/header.js"></script>
    <script src="js/main.js"></script>
    <script>
+
+      /* При нажатии на другую картинку  */
+
       $('.product__slider').on('click', function (e) {
          $('.product__slider').removeClass('product__slider_active');
          $(this).parents('.product__images').find('.product__img-main').attr('src', $(this).children().attr('src'));

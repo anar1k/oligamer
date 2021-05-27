@@ -60,13 +60,3 @@ document.addEventListener("click", function (e) {
     document.querySelector(".quantity-item__input").value = "1";
   }
 });
-
-/* При нажатии на оформить */
-
-$(function () {
-  $("#registrationCart").click(function () {
-    $(".cart-products").css("display", "none");
-    $(".cart-registration").css("display", "block");
-    $(".cart__title").text("Оформление заказа");
-  });
-});

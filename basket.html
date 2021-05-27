@@ -177,6 +177,18 @@
          }
       });
 
+      /* При нажатии перейти к оформлению */
+
+      $(function () {
+         $("#registrationCart").click(function () {
+            $(".cart-products").css("display", "none");
+            $(".cart-registration").css("display", "block");
+            $(".cart__title").text("Оформление заказа");
+         });
+      });
+
+      /* При нажатии на оформить заказ */
+
       $(function () {
          $('#btnSubmit').click(function () {
             $('.cart__form').css('display', 'none');
@@ -185,6 +197,8 @@
             $(".cart__empty").text('Спасибо за заказ! В ближайшее время наш менеджер свяжется с вами для подтверждения заказа.');
          })
       });
+
+
    </script>
 
 </body>

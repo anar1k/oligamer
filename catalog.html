@@ -976,6 +976,9 @@
    <script src="js/main.js"></script>
 
    <script>
+
+      /* Для каждого главного заголовка свои фильтры.Если переписать главный заголовок, то появятся соотвествующие фильтры. https://docs.google.com/document/d/1NeHJe-xpSgaV-57tVnwpelWC3MrYObflP6cnLAA84eM/edit */
+
       $(function () {
          let title = ['Жесткие диски', 'SSD диски', 'Блоки питания', 'Видеокарты', 'Звуковые карты', 'корпуса', 'Охлаждение компьютера', 'Материнские платы', 'Оперативная память', 'Процессоры'];
 
@@ -988,6 +991,8 @@
          }
       });
 
+      /* Если не будет товаров в каталоге, то сообщение, что по вашему запросу ничего не найдено */
+
       $(function () {
          if (!$('.product-catalog').length > 0) {
             $('.catalog-product__pagination').css('display', 'none');
@@ -998,6 +1003,8 @@
             $('.catalog-product__pagination').css('display', 'block');
          }
       });
+
+      /* функция для открытия меню сортировки */
 
       $(function () {
          $('#sortPrice').on('click', function (open) {
@@ -1010,6 +1017,8 @@
             }
          });
       });
+
+      /* функция для открытия фильтров. Для телефонов скрываются фильтры, но можно вызвать их кнопкой */
 
       $(function () {
          $('#linkFilters').on('click', function (open) {
