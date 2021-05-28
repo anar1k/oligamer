@@ -47,19 +47,31 @@
                      </label>
                   </div>
                   <div class="profile-info__names">
-                     <label class="profile__label">Имя
-                        <input required class="profile__input" type="text" placeholder="Имя" value="Тут инфа">
+                     <label class="profile__label"><span>Имя</span>
+                        <div class="profile__check">
+                           <input required class="profile__input" type="text" placeholder="Имя" value="Тут инфа">
+                           <span class="error"></span>
+                        </div>
                      </label>
-                     <label class="profile__label">Фамилия
-                        <input required class="profile__input" type="text" placeholder="Фамилия" value="Тут инфа">
+                     <label class="profile__label"><span>Фамилия</span>
+                        <div class="profile__check">
+                           <input required class="profile__input" type="text" placeholder="Фамилия" value="Тут инфа">
+                           <span class="error"></span>
+                        </div>
                      </label>
                   </div>
-                  <label class="profile__label">Никнейм
-                     <input required class="profile__input" type="text" placeholder="Никнейм" value="Тут инфа">
+                  <label class="profile__label"><span>Логин</span>
+                     <div class="profile__check">
+                        <input required class="profile__input" type="text" placeholder="Никнейм" value="Тут инфа">
+                        <span class="error"></span>
+                     </div>
                   </label>
-                  <label class="profile__label">Почта
-                     <input autocomplete="email" required class="profile__input" type="email" placeholder="E-mail"
-                        value="Тут инфа">
+                  <label class="profile__label"><span>Почта</span>
+                     <div class="profile__check">
+                        <input autocomplete="email" required class="profile__input" type="email" placeholder="E-mail"
+                           value="Тут инфа">
+                        <span class="error"></span>
+                     </div>
                   </label>
                   <button class="profile__btn" type="submit">Сохранить</button>
             </form>
@@ -67,11 +79,20 @@
          <div class="profile__content profile-guard">
             <h2 class="profile-guard__heading">Сменить пароль</h2>
             <form class="profile-guard__form">
-               <input required class="profile__input" type="password" placeholder="*Текущий пароль">
+               <div class="profile__check">
+                  <input required class="profile__input" type="password" placeholder="*Текущий пароль">
+                  <span class="error"></span>
+               </div>
                <a class="profile-guard__link" href="forgot-password.html">Забыли
                   пароль?</a>
-               <input required class="profile__input" type="password" placeholder="*Новый пароль">
-               <input required class="profile__input" type="password" placeholder="*Повторите пароль">
+               <div class="profile__check">
+                  <input required class="profile__input" type="password" placeholder="*Новый пароль">
+                  <span class="error"></span>
+               </div>
+               <div class="profile__check">
+                  <input required class="profile__input" type="password" placeholder="*Повторите пароль">
+                  <span class="error"></span>
+               </div>
                <button class="profile__btn" type="submit">Сохранить</button>
             </form>
          </div>

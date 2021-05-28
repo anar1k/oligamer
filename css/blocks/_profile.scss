@@ -5,7 +5,7 @@
     margin: 0 auto;
   }
   &__nav {
-    margin: 50px 0;
+    margin: 30px 0;
   }
 
   &__label {
@@ -13,16 +13,21 @@
     line-height: 170%;
     color: #ffffff;
   }
+  &__check {
+    margin-bottom: 13px;
+    text-align: center;
+  }
   &__input {
+    margin-bottom: 3px;
     margin-top: 5px;
     width: 100%;
     padding: 15px;
-    background: #7b7b7b;
+    background: #2b2b2b;
     box-sizing: border-box;
     border-radius: 40px;
     border: none;
     outline: none;
-    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 20px;
     transition: 0.4s;
@@ -188,9 +193,13 @@
     &__btn {
       width: 100%;
     }
+    &__nav {
+      margin: 10px 0 30px;
+    }
   }
 
   .profile-list {
+    justify-content: space-around;
     &__link {
       font-size: 22px;
     }
@@ -198,7 +207,7 @@
 
   .profile-info {
     &__avatar {
-      margin: 0 auto;
+      margin: 0 auto 40px;
     }
   }
 }

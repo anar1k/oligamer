@@ -1,3 +1,32 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  font-family: $font;
+}
+summary {
+  outline: none;
+  border: none;
+  display: block;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
 .breadcrumb {
   &__list {
     padding-top: 14px;
@@ -39,7 +68,7 @@
     display: flex;
   }
   &__input {
-    background: #7b7b7b;
+    background: #2b2b2b;
     font-size: 16px;
     line-height: 150%;
     box-sizing: border-box;
@@ -104,6 +133,12 @@
   }
 }
 
+.error {
+  color: #e40012;
+  font-size: 18px;
+  line-height: 160%;
+}
+
 @media (max-width: 767px) {
   .pagination__list {
     justify-content: center;
@@ -111,6 +146,7 @@
 
   .breadcrumb {
     &__list {
+      padding-top: 0;
       flex-wrap: wrap;
     }
     &__item {

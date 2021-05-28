@@ -22,6 +22,17 @@
   &__right {
     display: flex;
   }
+  &__form {
+    margin-right: 33px;
+    width: 248px;
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    align-items: center;
+  }
 }
 
 .menu {
@@ -44,23 +55,15 @@
   }
 }
 
-.header__form {
-  margin-right: 33px;
-  width: 248px;
-}
-
-.header__icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-}
-
 .icons {
   &__link {
     position: relative;
     transition: 0.4s;
+    height: 29px;
     &:hover {
       transform: scale(1.05);
+    }
+    &__img {
     }
   }
   &__circle {

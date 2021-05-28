@@ -27,13 +27,32 @@
                <h3 class="enter-profile__heading">Создайте аккаунт</h3>
                <form class="enter-profile__form" action="#">
                   <div class="enter-profile__name">
-                     <input required class="enter-profile__input" type="text" placeholder="*Имя">
-                     <input required class="enter-profile__input" type="text" placeholder="*Фамилия">
+                     <div class="enter-profile__check">
+                        <span class="error"></span>
+                        <input required class="enter-profile__input" type="text" placeholder="*Имя">
+                     </div>
+                     <div class="enter-profile__check">
+                        <span class="error"></span>
+                        <input required class="enter-profile__input" type="text" placeholder="*Фамилия">
+                     </div>
                   </div>
-                  <input required autocomplete="name" class="enter-profile__input" type="text" placeholder="*Никнейм">
-                  <input required autocomplete="email" class="enter-profile__input" type="email" placeholder="*E-mail">
-                  <input required class="enter-profile__input" type="password" placeholder="*Пароль">
-                  <input required class="enter-profile__input" type="password" placeholder="*Подтвердите пароль">
+                  <div class="enter-profile__check">
+                     <span class="error"></span>
+                     <input required class="enter-profile__input" type="text" placeholder="*Логин">
+                  </div>
+                  <div class="enter-profile__check">
+                     <span class="error"></span>
+                     <input required autocomplete="email" class="enter-profile__input" type="email"
+                        placeholder="*E-mail">
+                  </div>
+                  <div class="enter-profile__check">
+                     <span class="error"></span>
+                     <input required class="enter-profile__input" type="password" placeholder="*Пароль">
+                  </div>
+                  <div class="enter-profile__check">
+                     <span class="error"></span>
+                     <input required class="enter-profile__input" type="password" placeholder="*Подтвердите пароль">
+                  </div>
                   <button class="enter-profile__btn" type="submit">Регистрация</button>
                </form>
                <div class="enter-profile__privacy privacy-text">
