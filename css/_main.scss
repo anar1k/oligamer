@@ -40,6 +40,36 @@ body {
   font-family: $font;
   padding-top: 100px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  font-family: $font;
+}
+summary {
+  outline: none;
+  border: none;
+  display: block;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
 @media (min-width: 1440px) {
   .center {
     max-width: (1440px - 30px * 2);

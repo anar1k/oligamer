@@ -124,19 +124,20 @@
     color: #ffffff;
     margin: 20px 0;
   }
-  &__container {
+
+  &__list {
     max-width: 400px;
     font-size: 18px;
     line-height: 160%;
     color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__info {
-    font-weight: bold;
   }
   &__li {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 6px;
+    & span:last-child {
+      font-weight: bold;
+    }
     &:last-child {
       padding-bottom: 0;
     }
