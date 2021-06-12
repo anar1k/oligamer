@@ -43,6 +43,7 @@ function openTab(evt, tab) {
 /* Функции для корзины */
 
 /* 2 функции сколько элементов нужно */
+document.querySelector(".quantity-item__input").value = "1";
 document
   .querySelector(".quantity-item__input")
   .addEventListener("input", function (e) {
